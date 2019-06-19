@@ -21,7 +21,7 @@ namespace RusHydro
 
         public void Wait(By by)
         {
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
             IWebElement element = wait.Until(ExpectedConditions.ElementToBeClickable(by));
             element.Click();
         }
