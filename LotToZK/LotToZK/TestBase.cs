@@ -16,6 +16,7 @@ namespace RusHydro
 
         protected LoginHelper loginHelper;
         protected NavigationHelper navigationHelper;
+        protected LotHelper lotHelper;
  
         [SetUp]
         public void SetupTest()
@@ -26,6 +27,7 @@ namespace RusHydro
 
             loginHelper = new LoginHelper(driver);
             navigationHelper = new NavigationHelper(driver, baseURL);
+            lotHelper = new LotHelper(driver);
         }
 
         [TearDown]

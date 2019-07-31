@@ -18,6 +18,8 @@ namespace RusHydro
             navigationHelper.GoToHomePage();
             loginHelper.Login(new AccountData("login1", "123"));
             navigationHelper.GoToAllLots();
+            lotHelper.InitLotCreation();
+            lotHelper.FillLotForm();
             loginHelper.Logout();
         }
 
