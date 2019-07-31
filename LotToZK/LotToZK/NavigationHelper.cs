@@ -23,10 +23,10 @@ namespace RusHydro
         }
 
 
-        public void GoToVotingQuestionCZK()
+        public void GoToAllLots()
         {
-            Wait(By.Id("ui-accordion-main-header-6"));
-            Wait(By.Id("ui-id-93"));
+            Wait(By.Id("PlanningMainMenuSection_Header"));
+            Wait(By.Id("ui-id-82"));
         }
     }
 }

@@ -17,7 +17,7 @@ namespace RusHydro
         {
             navigationHelper.GoToHomePage();
             loginHelper.Login(new AccountData("login1", "123"));
-           
+            navigationHelper.GoToAllLots();
             loginHelper.Logout();
         }
 
