@@ -16,18 +16,16 @@ namespace RusHydro
 
         protected LoginHelper loginHelper;
         protected NavigationHelper navigationHelper;
-        protected QuestionHelper questionHelper;
-
+ 
         [SetUp]
         public void SetupTest()
         {
             driver = new InternetExplorerDriver();
-            baseURL = "http://http://rgwebdsr.norbit.ru";
+            baseURL = "http://rgwebdsr.norbit.ru";
             verificationErrors = new StringBuilder();
 
             loginHelper = new LoginHelper(driver);
             navigationHelper = new NavigationHelper(driver, baseURL);
-            questionHelper = new QuestionHelper(driver);
         }
 
         [TearDown]
